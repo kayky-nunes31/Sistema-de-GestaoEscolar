@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Moderno</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Login</h2>
+
+        <input type="email" id="email" placeholder="E-mail">
+        
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Senha">
+            <button onclick="togglePassword()">👁</button>
+        </div>
+
+        <button class="login-btn" onclick="validate()">Entrar</button>
+
+        <label class="dark-mode-toggle">
+            <input type="checkbox" onchange="toggleDarkMode()"> Modo Escuro
+        </label>
+
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
